@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="e_Shift.loginMenu">
+    <Position X="5" Y="9.25" Width="1.75" />
+    <Members>
+      <Field Name="btn_adminlogin" Hidden="true" />
+      <Method Name="btn_adminlogin_Click" Hidden="true" />
+      <Field Name="btn_userlogin" Hidden="true" />
+      <Method Name="btn_userlogin_Click" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="form_FormClosed" Hidden="true" />
+      <Method Name="formLoad" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Method Name="loginMenu" Hidden="true" />
+      <Field Name="pnl_form" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIBICiAAICEEAhAAAACAAAICAAEAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>loginMenu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="userform" />
+      <Field Name="adminform" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.adminLogin">
+    <Position X="1.5" Y="9" Width="2.75" />
+    <Members>
+      <Field Name="chk_showpassword" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="lbl_pwdError" Hidden="true" />
+      <Field Name="lbl_unameError" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEEAgACCAAABACAACAABACAAAAAEAAAAACAAAAAAE=</HashCode>
+      <FileName>adminLogin.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dbClass" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.DatabaseClass">
+    <Position X="1.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAABQQAADEAAAAAQAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>DatabaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="e_Shift.UloginForm">
+    <Position X="1.75" Y="5" Width="2.75" />
+    <Members>
+      <Field Name="btn_usersubmit" Hidden="true" />
+      <Field Name="chk_showpassword" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="lbl_pwdError" Hidden="true" />
+      <Field Name="lbl_userError" Hidden="true" />
+      <Field Name="link_forgot" Hidden="true" />
+      <Field Name="link_signup" Hidden="true" />
+      <Method Name="UloginForm" Hidden="true" />
+      <Method Name="UloginForm_Load" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAQgACCAAABACCACAABRCCAAACACAAAACAAAAAAA=</HashCode>
+      <FileName>userLoginForms\UloginForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dbClass" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.userLogin.UregisterForm">
+    <Position X="7.75" Y="5" Width="2.75" />
+    <Members>
+      <Field Name="btn_reset" Hidden="true" />
+      <Field Name="btn_userregister" Hidden="true" />
+      <Field Name="chk_showpassword" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="date_userbirthday" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="lbl_formError" Hidden="true" />
+      <Field Name="lbl_nameError" Hidden="true" />
+      <Field Name="lbl_pwdError" Hidden="true" />
+      <Field Name="lbl_userError" Hidden="true" />
+      <Field Name="link_signin" Hidden="true" />
+      <Method Name="UregisterForm" Hidden="true" />
+      <Method Name="UregisterForm_Load" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAECIgACCAAABACAACADBACiAAAAAAAAAACAASABBA=</HashCode>
+      <FileName>userLoginForms\UregisterForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.userLogin.userMenu">
+    <Position X="5.25" Y="5.5" Width="1.75" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="formLoad" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Method Name="loadForgot" Hidden="true" />
+      <Method Name="loadloginform" Hidden="true" />
+      <Field Name="pnl_form" Hidden="true" />
+      <Method Name="userMenu_Load" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAAEBAAAACAAAACgAEAAACABAAAAAACCAg=</HashCode>
+      <FileName>userLoginForms\userMenu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="uloginForm" />
+      <Field Name="uregisterForm" />
+      <Field Name="userForgot" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.userLoginForms.userForgot">
+    <Position X="4.75" Y="1" Width="2.75" />
+    <Members>
+      <Field Name="btn_chkUser" Hidden="true" />
+      <Field Name="btn_passwordrst" Hidden="true" />
+      <Field Name="chk_showpassword" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="fieldReset" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="lbl_Error" Hidden="true" />
+      <Field Name="link_signin" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="pnl_passwordreset" Hidden="true" />
+      <Method Name="userForgot" Hidden="true" />
+      <Method Name="userForgot_Load" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAECIgBCCAAABACAgCAABECAQgEAAABAAAAgAAAIBA=</HashCode>
+      <FileName>userLoginForms\userForgot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

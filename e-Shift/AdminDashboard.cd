@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="e_Shift.admin.adminDashboard">
+    <Position X="0.5" Y="6.25" Width="1.75" />
+    <Members>
+      <Method Name="adminDashboard_Load" Hidden="true" />
+      <Field Name="btn_allJobs" Hidden="true" />
+      <Field Name="btn_home" Hidden="true" />
+      <Field Name="btn_logout" Hidden="true" />
+      <Field Name="btn_products" Hidden="true" />
+      <Field Name="btn_transport" Hidden="true" />
+      <Field Name="btn_users" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="form_FormClosed" Hidden="true" />
+      <Method Name="formLoad" Hidden="true" />
+      <Field Name="gradientPanel1" Hidden="true" />
+      <Field Name="gradientPanel2" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="lbl_header" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+      <Field Name="panel3" Hidden="true" />
+      <Field Name="panel4" Hidden="true" />
+      <Field Name="panel5" Hidden="true" />
+      <Field Name="pnl_form" Hidden="true" />
+      <Field Name="prd_btnpnl" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAIgAYgSACAhACIgGAAABCABEQAkAAEHAAAQMAggg=</HashCode>
+      <FileName>admin\adminDashboard.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="allorders" />
+      <Field Name="allusers" />
+      <Field Name="homePage" />
+      <Field Name="loginMenu" />
+      <Field Name="ProductsPage" />
+      <Field Name="transportpage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.admin.allOrders">
+    <Position X="9.5" Y="0.75" Width="3" />
+    <Members>
+      <Field Name="btn_alljobs" Hidden="true" />
+      <Field Name="btn_close" Hidden="true" />
+      <Field Name="btn_createload" Hidden="true" />
+      <Field Name="btn_dbCreateload" Hidden="true" />
+      <Field Name="btn_loadclose" Hidden="true" />
+      <Field Name="btn_orderspend" Hidden="true" />
+      <Field Name="btnprod" Hidden="true" />
+      <Field Name="combo_jobid" Hidden="true" />
+      <Field Name="combo_noLoads" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn1" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn1" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn2" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn3" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn4" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn5" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="drivername" Hidden="true" />
+      <Field Name="dt_alljobsTable" Hidden="true" />
+      <Field Name="dt_loadTransport" Hidden="true" />
+      <Field Name="dt_productOrder" Hidden="true" />
+      <Field Name="dtproductName" Hidden="true" />
+      <Field Name="endloc" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="pnl_forloads" Hidden="true" />
+      <Field Name="pnl_orders" Hidden="true" />
+      <Field Name="pnl_showProducts" Hidden="true" />
+      <Field Name="startloc" Hidden="true" />
+      <Field Name="stats" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAEoAQDDQMQJCBkQiAQAECugoAEAgYACIQIAAgAJQ=</HashCode>
+      <FileName>admin\allOrders.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.admin.allUsers">
+    <Position X="3" Y="2.5" Width="2" />
+    <Members>
+      <Field Name="btn_addAdmin" Hidden="true" />
+      <Field Name="btn_addAdminpanel" Hidden="true" />
+      <Field Name="btn_admin" Hidden="true" />
+      <Field Name="btn_close" Hidden="true" />
+      <Field Name="btn_users" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn1" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn2" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn4" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn1" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn2" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn3" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn4" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dt_adminTable" Hidden="true" />
+      <Field Name="dt_usersTable" Hidden="true" />
+      <Field Name="dtproductImage" Hidden="true" />
+      <Field Name="dtproductName" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="lbl_id" Hidden="true" />
+      <Field Name="pnl_admin" Hidden="true" />
+      <Field Name="txt_password" Hidden="true" />
+      <Field Name="txt_userName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EQAEEIgKQDQIAFCCgoKIAAACQAEEAFgAIACEAAIAAAQ=</HashCode>
+      <FileName>admin\allUsers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.admin.homePage">
+    <Position X="6" Y="11.75" Width="1.75" />
+    <Members>
+      <Field Name="alljobslbl" Hidden="true" />
+      <Field Name="allloadslbl" Hidden="true" />
+      <Field Name="allproductslbl" Hidden="true" />
+      <Field Name="availabletransportslbl" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="jobsAcceptedlbl" Hidden="true" />
+      <Field Name="jobsDeclinedlbl" Hidden="true" />
+      <Field Name="jobsLoadedlbl" Hidden="true" />
+      <Field Name="jobspendingLBL" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label10" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="label9" Hidden="true" />
+      <Field Name="registereduserslbl" Hidden="true" />
+      <Field Name="transportUnitslbl" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>MAAAAIAAASAAABAAAACAAAAGAAIECECAAAQQBCgAAAw=</HashCode>
+      <FileName>admin\homePage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.admin.orderPending">
+    <Position X="6" Y="4" Width="1.75" />
+    <Members>
+      <Field Name="btn_close1" Hidden="true" />
+      <Field Name="btn_update" Hidden="true" />
+      <Field Name="btnprod" Hidden="true" />
+      <Field Name="combo_endloc" Hidden="true" />
+      <Field Name="combo_startloc" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn1" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn2" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn1" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dt_jobTable" Hidden="true" />
+      <Field Name="dtproductName" Hidden="true" />
+      <Field Name="endloc" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="lbl_Error" Hidden="true" />
+      <Field Name="lbl_id" Hidden="true" />
+      <Field Name="pnl_updatejob" Hidden="true" />
+      <Field Name="startloc" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAAAAIgAITAAAJQAgACAQAESAAgAQBgAACQAQAAIAIE=</HashCode>
+      <FileName>admin\orderPending.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.admin.productspage">
+    <Position X="9" Y="7" Width="2" />
+    <Members>
+      <Field Name="btn_addpro" Hidden="true" />
+      <Field Name="btn_addProduct" Hidden="true" />
+      <Field Name="btn_browse" Hidden="true" />
+      <Field Name="btn_close" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn1" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn2" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn1" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dt_productTable" Hidden="true" />
+      <Field Name="dtproductImage" Hidden="true" />
+      <Field Name="dtproductName" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="lbl_Error" Hidden="true" />
+      <Field Name="pic_product" Hidden="true" />
+      <Field Name="pic_search" Hidden="true" />
+      <Field Name="pnl_addProduct" Hidden="true" />
+      <Field Name="pnl_datatable" Hidden="true" />
+      <Field Name="txt_productName" Hidden="true" />
+      <Field Name="txt_search" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>FAQAENAgADQAEBCCgISIACADgAgEABgAAWRQAAAgACA=</HashCode>
+      <FileName>admin\productspage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.admin.transportPage">
+    <Position X="3" Y="6.75" Width="2.25" />
+    <Members>
+      <Field Name="Assistant" Hidden="true" />
+      <Field Name="available" Hidden="true" />
+      <Field Name="btn_addTransport" Hidden="true" />
+      <Field Name="btn_addTunit" Hidden="true" />
+      <Field Name="btn_all" Hidden="true" />
+      <Field Name="btn_available" Hidden="true" />
+      <Field Name="btn_close" Hidden="true" />
+      <Field Name="combo_containertype" Hidden="true" />
+      <Field Name="combo_status" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="containertype" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn1" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn2" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn1" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="drivername" Hidden="true" />
+      <Field Name="dt_transportTable" Hidden="true" />
+      <Field Name="dtlorry" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="lbl_Error" Hidden="true" />
+      <Field Name="lbl3" Hidden="true" />
+      <Field Name="lbl4" Hidden="true" />
+      <Field Name="pnl_addTuni" Hidden="true" />
+      <Field Name="pnl_datatable" Hidden="true" />
+      <Field Name="txt_assistant" Hidden="true" />
+      <Field Name="txt_driverName" Hidden="true" />
+      <Field Name="txt_lorryName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAFIEAAjQYFBAgEUSEAAgGEAgggBkJoCgAAAMgAAA=</HashCode>
+      <FileName>admin\transportPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.DatabaseClass">
+    <Position X="6.25" Y="7.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAABQQAADEAAAAAQAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>DatabaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="e_Shift.loginMenu" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBICiAAICEEAhAAAACAAAICAAEAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>loginMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

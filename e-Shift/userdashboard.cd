@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="e_Shift.customer.userDashboard">
+    <Position X="4.5" Y="4" Width="2" />
+    <Members>
+      <Field Name="btn_jobhistory" Hidden="true" />
+      <Field Name="btn_jobs" Hidden="true" />
+      <Field Name="btn_logout" Hidden="true" />
+      <Field Name="btn_profileSettings" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="gradientPanel1" Hidden="true" />
+      <Field Name="gradientPanel2" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="lbl_header" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+      <Field Name="panel3" Hidden="true" />
+      <Field Name="panel4" Hidden="true" />
+      <Field Name="pnl_form" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gAAAAgAAACAEABBAIAGAAAACghEAAkAEAGAAAQEAkAA=</HashCode>
+      <FileName>customer\userDashboard.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="jobHistory" />
+      <Field Name="loginMenu" />
+      <Field Name="NewJob" />
+      <Field Name="profileSettings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.customer.profileSettings">
+    <Position X="1" Y="4.25" Width="2.75" />
+    <Members>
+      <Field Name="btn_updatesettings" Hidden="true" />
+      <Field Name="chk_showpassword" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="date_userbirthday" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="lbl_formError" Hidden="true" />
+      <Field Name="lbl_nameError" Hidden="true" />
+      <Field Name="lbl_pwdError" Hidden="true" />
+      <Field Name="lbl_userError" Hidden="true" />
+      <Field Name="lblname" Hidden="true" />
+      <Field Name="txt_FullName" Hidden="true" />
+      <Field Name="txt_password" Hidden="true" />
+      <Field Name="txt_username" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAIgACDAAQBACAACADgACCAAAAAAAAAACAAWAAAA=</HashCode>
+      <FileName>customer\profileSettings.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.customer.newJob">
+    <Position X="7.5" Y="3.5" Width="3.25" />
+    <Members>
+      <Field Name="btn_addproduct" Hidden="true" />
+      <Field Name="btn_close" Hidden="true" />
+      <Field Name="btn_createjob" Hidden="true" />
+      <Field Name="btn_Selectpro" Hidden="true" />
+      <Field Name="combo_endloc" Hidden="true" />
+      <Field Name="combo_productlist" Hidden="true" />
+      <Field Name="combo_startloc" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn1" Hidden="true" />
+      <Field Name="dataGridViewButtonColumn2" Hidden="true" />
+      <Field Name="dataGridViewImageColumn1" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn2" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn3" Hidden="true" />
+      <Field Name="deleteimg" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dt_productTable" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="lbl_Error" Hidden="true" />
+      <Field Name="pic_productpicture" Hidden="true" />
+      <Field Name="pnl_addproduct" Hidden="true" />
+      <Field Name="quantity" Hidden="true" />
+      <Field Name="txt_quantity" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAEIUQACQACBiAAADQAAACoAgIABiACCQAQAAAgMU=</HashCode>
+      <FileName>customer\newJob.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.customer.jobHistory">
+    <Position X="4.25" Y="8.25" Width="2" />
+    <Members>
+      <Field Name="btn_close" Hidden="true" />
+      <Field Name="btnprod" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn1" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn3" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn4" Hidden="true" />
+      <Field Name="dataGridViewTextBoxColumn5" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dt_alljobsTable" Hidden="true" />
+      <Field Name="dt_productOrder" Hidden="true" />
+      <Field Name="endloc" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="pnl_showProducts" Hidden="true" />
+      <Field Name="startloc" Hidden="true" />
+      <Field Name="stats" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAEoAQADQIAIABAQiAQAECCgAAAAAAAAAAAAAAAIQ=</HashCode>
+      <FileName>customer\jobHistory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="objdb" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="e_Shift.DatabaseClass">
+    <Position X="1.75" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAABQQAADEAAAAAQAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>DatabaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="e_Shift.loginMenu" Collapsed="true">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBICiAAICEEAhAAAACAAAICAAEAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>loginMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

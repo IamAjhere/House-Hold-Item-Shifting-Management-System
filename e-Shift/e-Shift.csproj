@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC371DEF-E9A9-4BCD-8832-36291EA37AB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>e_Shift</RootNamespace>
+    <AssemblyName>e-Shift</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9EB215E3AC76BF2DC7C65A86DF35E86E3F67C792</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>e-Shift_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminLogin.Designer.cs">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\adminDashboard.Designer.cs">
+      <DependentUpon>adminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\allOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\allOrders.Designer.cs">
+      <DependentUpon>allOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\allUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\allUsers.Designer.cs">
+      <DependentUpon>allUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\homePage.Designer.cs">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\orderPending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\orderPending.Designer.cs">
+      <DependentUpon>orderPending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\productspage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\productspage.Designer.cs">
+      <DependentUpon>productspage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\transportPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\transportPage.Designer.cs">
+      <DependentUpon>transportPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customControls\gradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customControls\RJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customer\jobHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\jobHistory.Designer.cs">
+      <DependentUpon>jobHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\newJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\newJob.Designer.cs">
+      <DependentUpon>newJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\profileSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\profileSettings.Designer.cs">
+      <DependentUpon>profileSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer\userDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer\userDashboard.Designer.cs">
+      <DependentUpon>userDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseClass.cs" />
+    <Compile Include="loginMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginMenu.Designer.cs">
+      <DependentUpon>loginMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="customControls\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customControls\RJTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="customControls\RJTextBox.designer.cs">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customControls\RJDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="userLoginForms\UloginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userLoginForms\UloginForm.Designer.cs">
+      <DependentUpon>UloginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userLoginForms\UregisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userLoginForms\UregisterForm.Designer.cs">
+      <DependentUpon>UregisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userLoginForms\userForgot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userLoginForms\userForgot.Designer.cs">
+      <DependentUpon>userForgot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userLoginForms\userMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userLoginForms\userMenu.Designer.cs">
+      <DependentUpon>userMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminLogin.resx">
+      <DependentUpon>adminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\adminDashboard.resx">
+      <DependentUpon>adminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\allOrders.resx">
+      <DependentUpon>allOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\allUsers.resx">
+      <DependentUpon>allUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\homePage.resx">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\orderPending.resx">
+      <DependentUpon>orderPending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\productspage.resx">
+      <DependentUpon>productspage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\transportPage.resx">
+      <DependentUpon>transportPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\jobHistory.resx">
+      <DependentUpon>jobHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\newJob.resx">
+      <DependentUpon>newJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\profileSettings.resx">
+      <DependentUpon>profileSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer\userDashboard.resx">
+      <DependentUpon>userDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginMenu.resx">
+      <DependentUpon>loginMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="customControls\RJTextBox.resx">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userLoginForms\UloginForm.resx">
+      <DependentUpon>UloginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userLoginForms\UregisterForm.resx">
+      <DependentUpon>UregisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userLoginForms\userForgot.resx">
+      <DependentUpon>userForgot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userLoginForms\userMenu.resx">
+      <DependentUpon>userMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AdminDashboard.cd" />
+    <None Include="LoginMenu.cd" />
+    <None Include="e-Shift_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Poppins-Black.ttf" />
+    <None Include="Resources\Poppins-Bold.ttf" />
+    <None Include="Resources\Poppins-ExtraBold.ttf" />
+    <None Include="Resources\Poppins-Light.ttf" />
+    <None Include="Resources\Poppins-Regular.ttf" />
+    <None Include="userdashboard.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinAdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backgroundimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orgpnkGradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteblk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletewhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pending orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accepted orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TransportAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small pending order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small transport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orderDecline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orderload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allloads.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\availabletransport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registerduser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gear-50.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
