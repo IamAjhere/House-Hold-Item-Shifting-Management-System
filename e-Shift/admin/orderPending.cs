@@ -51,7 +51,7 @@ namespace e_Shift.admin
                 DialogResult accept_decline = MessageBox.Show("Do you want to accept this order?", "Order Confirmation", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if ( accept_decline == DialogResult.Yes)
                 {
-                    SqlCommand penaccept = new SqlCommand("UPDATE jobTable SET accept = 'Accept' WHERE id='"+ID+"'");
+                    SqlCommand penaccept = new SqlCommand("UPDATE jobTable SET accept = 'Accepted' WHERE id='"+ID+"'");
                     int accepted = objdb.executeQuery(penaccept);
                     dt_jobTable.Rows.RemoveAt(row.Index);
                     MessageBox.Show("Job - " + ID + " Is Accepted", "Job Accepted");

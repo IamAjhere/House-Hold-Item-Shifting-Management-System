@@ -33,8 +33,8 @@ namespace e_Shift.customer
         //logout fucntion
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            
+            Application.Exit();
+
         }
         //load create new jobs form on click
         private void btn_newjob_Click(object sender, EventArgs e)

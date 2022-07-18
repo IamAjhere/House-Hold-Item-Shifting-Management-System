@@ -31,7 +31,7 @@ namespace e_Shift.admin
         //logout fucntion
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Application.Exit();
 
         }
         //load product form on click

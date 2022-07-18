@@ -151,7 +151,7 @@ namespace e_Shift.admin
                                     select (string)drr["driver"]).ToArray();
 
             
-            MessageBox.Show(availableTransports.Rows.Count.ToString());
+            
             return drivername;
             
             
